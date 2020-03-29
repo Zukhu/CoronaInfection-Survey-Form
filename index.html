@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="coronavirus survey">
+        <meta name="author" content="zukhu">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/mystyle.css">
+        <title>CoronaInfection Survey</title>
+    </head>
+    <body>
+        <h1 id="title">Conoravirus Infection Check</h1>
+        <p id="description">
+            Fill this form to check how dangerous is your situation.
+            <br>
+            <br>
+            For more information, check <a id="corona-info" target="_blank" href="https://www.who.int/health-topics/coronavirus">this</a> link. 
+        </p>
+        <form id="survey-form">
+            <label for="name" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email" id="email-label">Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="number" id="number-label">Age</label>
+            <input type="number" id="number" placeholder="Enter your age" min="0" max="120" required>
+
+            <label id = "gender-label">Gender</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+
+            <label for="dropdown">Which country are you living in?</label>
+            <select id="dropdown">
+                <option value="USA">USA</option>
+                <option value="Italy">Italy</option>
+                <option value="China">China</option>
+                <option value="Spain">Spain</option>
+                <option value="Germany">Germany</option>
+                <option value="Iran">Iran</option>
+                <option value="France">France</option>
+                <option value="UK">UK</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Belgium">Belgium</option>
+                <option value="S. Korea">S. Korea</option>
+                <option value="Austria">Austria</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Canada">Canada</option>
+                <option value="Norway">Norway</option>
+                <option value="Australia">Australia</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Israel">Sweden</option>
+                <option value="Czechia">Czechia</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Ireland">Ireland</option>
+                <option value="Denmark">Denmark</option>
+            </select>
+
+                <p>Do you suffer from any of these conditions? (check if any)</p>
+            </layer>
+            <label class="checkbox-container" id="condition-1">Hypertension
+                <input type="checkbox" value="Hypertension">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container" id="condition-2">Diabetes
+                <input type="checkbox" value="Diabetes">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container" id="condition-3">Cardiovascular disease
+                <input type="checkbox" Value="Cardiovascular">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container" id="condition-4">Chronic respiratory disease
+                <input type="checkbox" Value="ChronicRespiratory">
+                <span class="checkmark"></span>
+            </label>
+            <label class="checkbox-container" id="condition-5">Cancer(any)
+                <input type="checkbox" Value="Cancer">
+                <span class="checkmark"></span>
+            </label>
+            
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" rows="4" cols="50">
+            Enter your comment here...
+            </textarea>
+
+            <button id="submit">Submit</button>
+        </form>
+        <footer id="author-id">
+            <small>Zukhu © 2020</small>
+        </footer>
+    </body>
+</html>
